@@ -1,0 +1,49 @@
+@media (max-width: 1200px) {
+    .nosContainer {
+        grid-template-areas:
+        "nosHeader          nosHeader           nosHeader"
+        "nosHeader__nosMenu nosHeader__nosMenu  nosHeader__nosMenu"
+        "mainNos            mainNos             asideNos"
+        "sectionNos         sectionNos          asideNos"
+        "articleNos         articleNos          articleNos"
+        "footer          footer           footer";
+        }
+}
+
+@media (max-width: 992px) {
+    .nosContainer {
+        grid-template-areas:
+        "nosHeader          nosHeader           nosHeader"
+        "nosHeader__nosMenu nosHeader__nosMenu  nosHeader__nosMenu"
+        "mainNos            mainNos             asideNos"
+        "sectionNos         sectionNos          asideNos"
+        "articleNos         articleNos          articleNos"
+        "footer          footer           footer";
+        }
+}
+
+@media (max-width:768px) {
+    .nosContainer {
+        grid-template-areas:
+            "nosHeader          nosHeader" 
+            "nosHeader__nosMenu nosHeader__nosMenu" 
+            "mainNos            mainNos" 
+            "asideNos           asideNos" 
+            "sectionNos         sectionNos"
+            "articleNos         articleNos"
+            "footer          footer";
+    }
+}
+
+@media (max-width: 576px) {
+    .nosContainer {
+        grid-template-areas: 
+            "nosHeader"
+            "nosHeader__nosMenu" 
+            "mainNos" 
+            "asideNos"     
+            "sectionNos"
+            "articleNos"
+            "footer";
+    }
+}

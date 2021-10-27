@@ -1,0 +1,158 @@
+.contConcurso {
+    width: 90%;
+    max-width: 80rem;
+    min-width:20rem;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 16px;
+    display: grid;
+    grid-template-areas:
+        "headerConcurso         headerConcurso          headerConcurso"
+        "contest2021            contest2021             contest2021"
+        "galeriaContest         galeriaContest          galeriaContest"
+        "posiciones             posiciones              posiciones"
+        "footer                 footer                  footer";
+}
+
+.headerConcurso {
+    grid-area: headerConcurso;
+    background: rgb(42, 156, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    color:white;
+    padding: 10px;
+    margin-bottom: 10px;
+    .headerConcurso__titular {
+        font-size: 2em;
+    }
+    .headerConcurso__navMenu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: auto;
+        justify-content: flex-end;
+        a {
+            background: darkolivegreen;
+            color: seashell;
+            margin:1px;
+            padding: 2px;
+            width: 100px;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            &:hover {
+                background: rgb(42, 156, 42);
+            }
+        }
+    }
+}
+
+.contest2021 {
+    display: grid;
+    grid-gap: 20px;
+    grid-area: contest2021;
+    grid-template-areas:
+        "video1Text video1Text  video1"
+        "video2Text video2Text  video2";
+    .contest2021__video1 {
+        grid-area: video1;
+        background: black;
+        min-width: 350px;
+        margin-top: 5px;
+    }
+    .contest2021__video1Text {
+        grid-area: video1Text;  
+        padding: 5px;
+        background: white;
+        min-width: 350px;
+        &:hover {
+            transform: scale(102%);
+        }
+        .contest2021__video1Text__titulo {
+            padding-left: 10px;
+            font-size: 3rem;
+            background: #000;
+            color: #fff;
+        }
+        .contest2021__video1Text__parrafo1 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-style: italic;
+        }
+        .contest2021__video1Text__parrafo2 {
+            font-size: 1rem;
+            font-weight: 350;
+        }
+    }
+
+    .contest2021__video2 {
+        grid-area: video2;
+        background: black;
+        min-width: 350px;
+        margin-top: 5px;
+    }
+    .contest2021__video2Text {
+        grid-area: video2Text;
+        padding: 5px;
+        background: white;
+        min-width: 350px;
+        &:hover {
+            transform: scale(102%);
+        }
+        .contest2021__video2Text__titulo {
+            padding-left: 10px;
+            font-size: 3rem;
+            background: #000;
+            color: #fff;
+        }
+        .contest2021__video2Text__parrafo1 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-style: italic;
+        }
+        .contest2021__video2Text__parrafo2 {
+            font-size: 1rem;
+            font-weight: 350;
+        }
+
+    }
+}
+
+.galeriaContest {
+    grid-area: galeriaContest;
+    margin-bottom: 10px;
+    .galeriaContest__titulo {
+        padding: 5px;
+        margin: 10px 0 10px 0;
+        background: rgb(42, 156, 42);
+        color: white;
+    }
+    .galeriaContest__fotos {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background: white;
+        img {
+            margin: 10px;
+            &:hover {
+                transform: scale(140%);
+            }
+        }
+    }
+}
+
+.posiciones {
+    grid-area: posiciones;
+    .posiciones__titulo {
+        background: rgb(42, 156, 42);
+        color: white;
+        padding: 10px;
+    }
+}
+
+@import "footer";
+@import "mediaqConcurso";

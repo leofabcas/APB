@@ -1,0 +1,61 @@
+@media (max-width: 1200px) {
+    .contNos {
+        grid-template-areas:
+        "headerConcurso         headerConcurso          headerConcurso"
+        "contest2021            contest2021             contest2021"
+        "galeriaContest         galeriaContest          galeriaContest"
+        "posiciones             posiciones              posiciones"
+        "footer         footer          footer";
+        
+        font-size: 14px;
+        }
+    } 
+
+@media (max-width: 992px) {
+    .contNos {
+        grid-template-areas:
+        "headerConcurso         headerConcurso          headerConcurso"
+        "contest2021            contest2021             contest2021"
+        "galeriaContest         galeriaContest          galeriaContest"
+        "posiciones             posiciones              posiciones"
+        "footer         footer          footer";
+        
+        font-size: 12px;
+    }
+}
+
+@media (max-width:768px) {
+    .contNos {
+        grid-template-areas:
+        "headerConcurso         headerConcurso"
+        "contest2021            contest2021"
+        "galeriaContest         galeriaContest"
+        "posiciones             posiciones"
+        "footer         footer";
+    }
+
+    .contest2021 {
+        grid-template-areas:
+            "video1Text video1"
+            "video2Text video2";
+    }
+}
+
+@media (max-width: 576px) {
+        .contNos {
+            grid-template-areas:
+            "headerConcurso"
+            "contest2021"
+            "galeriaContest"
+            "posiciones"
+            "footer";
+        }
+    
+        .contest2021 {
+            grid-template-areas:
+                "video1Text"
+                "video1"
+                "video2Text" 
+                "video2";
+        }
+}
