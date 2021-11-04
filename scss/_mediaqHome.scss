@@ -1,50 +1,94 @@
+@media (max-width:1280){
+    .contenedorHome {
+        grid-template-areas:    
+        "homeHeader homeHeader  homeHeader  homeHeader" 
+        "contenedorHome__dropdown   contenedorHome__dropdown contenedorHome__dropdown contenedorHome__dropdown"
+        "homeBarImg homeBarImg  homeBarImg  homeBarImg"
+        "contenido1 contenido2  contenido3  contenido4"
+        "homeArticle homeArticle homeArticle homeArticle"
+        "footer footer  footer  footer";
+
+        .homeBarImg__dropdown {
+            display: none;
+        }
+    }  
+}
+
 @media (max-width:1200){
     .contenedorHome {
-    grid-template-areas:    "homeHeader homeHeader  homeHeader  homeHeader" 
-                            "homeTitulo homeTitulo  homeTitulo  homeTitulo"
-                            "contenido1 contenido2  contenido3  contenido4"
-                            "footer footer  footer  footer";
-    }   
+        grid-template-areas:
+        "homeHeader homeHeader  homeHeader  homeHeader" 
+        "homeBarImg homeBarImg  homeBarImg  homeBarImg"
+        "contenido1 contenido2  contenido3  contenido4"
+        "homeArticle    homeArticle homeArticle homeArticle"
+        "footer footer  footer  footer";  
+
+        .homeBarImg__dropdown {
+            display: none;
+        }
+    }  
 }
 
 @media (max-width: 992px) {
     .contenedorHome {
         grid-template-areas:  
                             "homeHeader homeHeader  homeHeader"
-                            "homeTitulo homeTitulo  homeTitulo"
+                            "homeBarImg homeBarImg  homeBarImg"
                             "contenido1 contenido2  contenido3"
                             "contenido4 contenido4  contenido4"
+                            "homeArticle    homeArticle homeArticle"
                             "footer footer  footer";
-        }
+        .homeBarImg__dropdown {
+            display: none;
+        }   
+    }    
 }
 
 @media (max-width:768px) {
     .contenedorHome {
         grid-template-areas:    "homeHeader homeHeader"
-                                "homeTitulo homeTitulo"
+                                "homeBarImg homeBarImg"
                                 "contenido1 contenido2"
                                 "contenido3 contenido4"
+                                "homeArticle homeArticle"
                                 "footer footer";
-        }
 
-    .titular {
-        font-size: 18px;
+        .homeHeader__titular {
+            font-size: 14px;
+        }
+        .homeBarImg__dropdown {
+            display: none;
+        }
     }
 }
 
 @media (max-width:576px) {
     .contenedorHome {
+        width: 100%;
+        margin: 0;
         grid-template-areas:    
             "homeHeader"
-            "homeTitulo"
+            "contenedorHome__dropdown"
+            "homeBarImg"
             "contenido1"
             "contenido2"
             "contenido3"
             "contenido4"
+            "homeArticle"
             "footer";
+            
             .homeHeader__imgLogo {
                 display: none;
             }
+            .homeHeader__titular {
+                font-size: 12px;
+            }    
+            .homeBarImg__menu {
+                display: none;
+            }
+            .homeBarImg__dropdown {
+                display: contents;
+            }  
         }
     }
 

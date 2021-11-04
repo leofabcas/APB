@@ -1,18 +1,53 @@
 .nosContainer {
-    width: 90%;
-    max-width: 80rem;
-    min-width:20rem;
-    padding: 10px;
-    margin: 20px auto;
+    // width: 100%;
+    // max-width: 80rem;
+    // min-width:20rem;
+    // padding: 10px;
+    // margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     display: grid;
     grid-template-areas:
-        "nosHeader          nosHeader           nosHeader"
-        "nosHeader__nosMenu nosHeader__nosMenu  nosHeader__nosMenu"
-        "mainNos            mainNos             asideNos"
-        "sectionNos         sectionNos          asideNos"
-        "articleNos         articleNos          articleNos"
-        "footer          footer           footer";
+        "nosHeader  nosHeader          nosHeader           nosHeader"
+        "nosBarImg  nosHeader__nosMenu nosHeader__nosMenu  nosHeader__nosMenu"
+        "nosBarImg  mainNos            mainNos             asideNos"
+        "nosBarImg  sectionNos         sectionNos          asideNos"
+        "nosBarImg  articleNos         articleNos          articleNos"
+        "footer     footer             footer              footer";
+}
+
+.nosBarImg {
+    color: #fff;
+    grid-area: nosBarImg;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px 5px 0 0;
+    .nosBarImg__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        position: sticky;
+        left: 0;
+        top:0;
+        .nosBarImg__menu__nos {
+            background: rgb(97, 100, 97);   
+        }
+        a {
+            background: rgb(31, 30, 30);
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            transition: .3s ease-out all;
+            text-decoration: none;
+            &:hover {
+                background: rgb(42, 156, 42);
+                color: #fff;
+            }
+        }
+    }
 }
 
 .nosHeader {
@@ -22,9 +57,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 16px;
     grid-area: nosHeader;
     padding: 5px;
+    .nosHeader__titulo {
+        font-size: 3em;
+    }
     .nosHeader__nosMenu {
         background: rgb(42, 156, 42);
         grid-area: nosHeader__nosMenu;
@@ -59,7 +97,7 @@
     grid-area: mainNos;
     font-size: 1.125em;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 5px 0 0;
     .mainNos__titulo {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
@@ -75,11 +113,11 @@
     grid-area: sectionNos;
     font-size: 1em;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 5px 0 0;
     .sectionNos__section1 {
         font-size: 1em;
         padding: 5px;
-        margin: 5px;
+        margin: 5px 0 5px 0;
         .sectionNos__section1__titulo {
             font-family: 'Roboto', sans-serif;
             font-style: italic;  
@@ -93,7 +131,7 @@
     .sectionNos__section2 {
         font-size: 1em;
         padding: 5px;
-        margin: 5px;
+        margin: 5px 0 5px 0;
         .sectionNos__section2__titulo {
             font-family: 'Roboto', sans-serif;
             font-style: italic;
@@ -108,8 +146,8 @@
 
 .asideNos {
     grid-area:asideNos;
-    padding: 5px;
-    margin: 5px;
+    // padding: 5px;
+    margin: 5px 0 0 0;
     .asideNos__img {
         width:100%;
         height: 100%;
@@ -122,7 +160,7 @@
     grid-area:articleNos;
     font-size:1rem;
     padding: 5px;
-    margin:5px;
+    margin: 5px 0 5px 0;
     .articleNos__titulo {
         font-size: 1.5rem;
         font-style: italic;

@@ -1,26 +1,33 @@
+body {
+    background: url(../multimedia/abstractBlue.jpg);
+}
+
 .contenedorHome {
-    width: 90%;
-    max-width: 80rem;
-    min-width:20rem;
+    // width: 100%;
+    // max-width: 80rem;
+    // min-width:20rem;
     padding: 10px;
-    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    // margin: 20px auto;
     display: grid;
-    grid-template-areas:    "homeHeader homeHeader  homeHeader  homeHeader" 
-                            "homeTitulo homeTitulo  homeTitulo  homeTitulo"
-                            "contenido1 contenido2  contenido3  contenido4"
-                            "footer     footer      footer      footer";
+    grid-gap: 0;
+    grid-template-areas:   
+                            "homeHeader     homeHeader  homeHeader  homeHeader" 
+                            "homeBarImg     homeBarImg  homeBarImg  homeBarImg"
+                            "contenido1     contenido2  contenido3  contenido4"
+                            "homeArticle    homeArticle homeArticle homeArticle"
+                            "footer         footer      footer      footer";
 }
 
 .homeHeader {
-    background-image: linear-gradient(darkolivegreen, rgb(42, 156, 42));
-    color: #fff;
     grid-area: homeHeader;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem;
-    margin-bottom: 10px;
+    align-items: flex-end;
+    // padding: 1.25rem;
+
     .homeHeader__imgLogo {
         height: 100px;
         animation-name: logoBeat;
@@ -30,44 +37,54 @@
         animation-delay: 0s;
     }    
     .homeHeader__titular {
-        font-size: 5rem;
+        h1 {
+            color: white;
+            font-weight: 800;
+            border: #000;
+            font-size: 4em;
+            text-transform: uppercase;
+        }
     }
 }
 
-.homeTitulo {
-    background: rgb(42, 156, 42);
-    color: #fff;
-    grid-area: homeTitulo;
-    display: flex;
-    flex-basis: auto;
+.homeBarImg {
+    grid-area: homeBarImg;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.625rem;
     margin-bottom: 10px;
-    .homeTitulo__tituloBarra {
+    .homeBarImg__menu {
         display: flex;
-        flex-wrap: wrap;
-        flex-basis: auto;
-    }
-    .homeTitulo__homeNavMenu {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: auto;
-         a {
-            background: darkolivegreen;
-            color: seashell;
-            margin:1px;
-            padding: 2px;
-            width: 100px;
-            font-size: 12px;
-            font-weight: 700;
+        justify-content: space-evenly;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        .homeBarImg__menu__home {
+            background: rgb(97, 100, 97);   
+        }
+
+        a {
+            background: rgb(31, 30, 30);
+            padding: 20px;
+            width: 100%;
             text-align: center;
+            color: #fff;
+            transition: .3s ease-out all;
             text-decoration: none;
             &:hover {
                 background: rgb(42, 156, 42);
+                color: #fff;
             }
-        }    
+        }
+    }
+    img {
+        width: 100%;
+        background: none;
+    }
+    .homeBarImg__dropdown {
+        background: black;
+        position: sticky;
+        top: 0;
+        display: none;
     }
 }
 
@@ -84,7 +101,9 @@
         font-size: 2rem;
     }
     .contenidos__parrafo {
-        font-size: 1.15rem;
+        font-size: 1.35rem;
+        font-weight: 900;
+        font-style: italic;
     }
 }
 
@@ -101,8 +120,9 @@
     }
 
 .homeContenido2 {
-    background: darkgrey;
+    background: #000;
     grid-area: contenido2;
+    color: #fff;
     }
 
 .homeContenido3 {
@@ -111,9 +131,24 @@
     }
 
 .homeContenido4 {
-    background: darkgrey;
+    background: #000;
     grid-area: contenido4;
+    color: #fff;
     }
+
+.homeArticle {
+    border-style: solid;
+    grid-area: homeArticle;
+    padding:10px;
+    margin-top: 10px;
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align:center;
+        font-size: 1.15em;
+    }
+}
 
 @import "footer";
 
