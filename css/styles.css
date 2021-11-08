@@ -186,15 +186,11 @@ footer {
   .contenedorHome {
     width: 100%;
     margin: 0;
-    grid-template-areas: "homeHeader" "contenedorHome__dropdown" "homeBarImg" "contenido1" "contenido2" "contenido3" "contenido4" "homeArticle" "footer"; }
-    .contenedorHome .homeHeader__imgLogo {
+    grid-template-areas: "homeBarImg" "homeContenido" "footer"; }
+    .contenedorHome .socialBar {
       display: none; }
-    .contenedorHome .homeHeader__titular {
-      font-size: 12px; }
-    .contenedorHome .homeBarImg__menu {
-      display: none; }
-    .contenedorHome .homeBarImg__dropdown {
-      display: contents; } }
+    .contenedorHome .homeContenido__aside {
+      display: none; } }
 
 @keyframes logoBeat {
   0% {
