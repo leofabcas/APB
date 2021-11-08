@@ -7,13 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="concurso, acuarismo, contest, aquacontest, IAPLC">
-    <meta name="description" content="Realizamos los concursos más grandes de acuarismo hasta la fecha, con jueces de primer nivel, y varios de ellos campeones de IAPLC">
+    <meta name="description"
+        content="Realizamos los concursos más grandes de acuarismo hasta la fecha, con jueces de primer nivel, y varios de ellos campeones de IAPLC">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontello.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
@@ -23,16 +25,29 @@
 
         <header class="headerConcurso">
 
-            <div class="headerConcurso__titular">
-                <h1>AP&B | APB CONTEST</h1>
+            <div class="headerConcurso__menu">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <h1>AP&B Concurso | </h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">Concurso</a>
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="encuentros.html">Encuentros</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-
-            <nav class="headerConcurso__navMenu">
-                <a href="index.html">HOME</a>
-                <a href="nosotros.html">NOSOTROS</a>
-                <a href="encuentros.html">ENCUENTROS</a>
-                <a href="galeria.html">GALERIA</a>
-            </nav>
 
         </header>
 
@@ -49,11 +64,13 @@
             <div class="contest2021__video1Text">
                 <h2 class="contest2021__video1Text__titulo">Jueces de Lujo</h2>
                 <br>
-                <p class="contest2021__video1Text__parrafo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum error doloribus doloremque, ad a odio
+                <p class="contest2021__video1Text__parrafo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eum error doloribus doloremque, ad a odio
                     repellat suscipit nulla atque laborum ab, eaque dicta, dolorem odit est minus tenetur repudiandae
                     magnam.
                 </p>
-                <p class="contest2021__video1Text__parrafo2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat fugit praesentium illum vel
+                <p class="contest2021__video1Text__parrafo2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis fugiat fugit praesentium illum vel
                     rerum facere esse voluptas quaerat expedita nam aspernatur provident necessitatibus at unde
                     cupiditate et reiciendis.
                 </p>
@@ -70,10 +87,12 @@
             <div class="contest2021__video2Text">
                 <h2 class="contest2021__video2Text__titulo">Lanzamiento 2021</h2>
                 <br>
-                <p class="contest2021__video2Text__parrafo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi iusto veniam quaerat eos nulla
+                <p class="contest2021__video2Text__parrafo1">ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+                    iusto veniam quaerat eos nulla
                     laudantium consectetur ea aperiam, corporis accusantium optio assumenda.
                 </p>
-                <p class="contest2021__video2Text__parrafo2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur qui magnam ipsum
+                <p class="contest2021__video2Text__parrafo2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur aspernatur qui magnam ipsum
                     corrupti vitae exercitationem eos quisquam unde dignissimos? Omnis optio aspernatur a sequi sit quae
                     nostrum iure.
                 </p>
@@ -90,6 +109,8 @@
                 <img src="multimedia/galeria2WildTranq.jpg" alt="">
                 <img src="multimedia/galeria3GreenStone.jpg" alt="">
                 <img src="multimedia/galeria4ArrecifeDeMadera.jpg" alt="">
+                <img src="multimedia/galeria5Paradise.jpg" alt="">
+                <img src="multimedia/piedraycamino.jpg" alt="">
                 <img src="multimedia/galeria5Paradise.jpg" alt="">
                 <img src="multimedia/piedraycamino.jpg" alt="">
             </div>
@@ -276,26 +297,36 @@
         </div>
 
         <footer>
-            <nav class="footer__links">
-                <a href="index.html">HOME</a>
-                <a href="nosotros.html">NOSOTROS</a>
-                <a href="encuentros.html">ENCUENTROS</a>
-                <a href="galeria.html">GALERIA</a>
-            </nav>
+            <div>
+                <img class="footer__logo" src="multimedia/LOGOAPBOK-min.png" alt="">
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright__titulo">Todos los derechos reservados.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, eum?</p>
+                <p>©2021 Copyright: Leo AP&B</p>
+            </div>
+            <div class="footer__redes">
+                <h6>Redes</h6>
+                <nav class="navSocialNetworks">
+                    <a class="icon-instagram" href="https://www.instagram.com/acuarios.plantados.y.biotopos/"
+                        target="_blank"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/groups/385692052358680"
+                        target="_blank"></a>
+                    <a class="icon-youtube" href="https://www.youtube.com/channel/UC11LVZvK1pf4wAEvPaiJIeg"
+                        target="_blank"></a>
+                </nav>
+            </div>
+            <div>
+                <nav class="footer__links">
+                    <h6>Secciones</h6>
+                    <a href="index.html">home</a>
+                    <a href="concurso.html">concurso</a>
+                    <a href="nosotros.html">nosotros</a>
+                    <a href="encuentros.html">encuentros</a>
+                    <a href="galeria.html">galeria</a>
+                </nav>
+            </div>
 
-            <nav class="navSocialNetworks">
-                <a href="https://www.instagram.com/acuarios.plantados.y.biotopos/" target="_blank">
-                    <img src="multimedia/instagram_icon.png" alt="logo instagram">
-                </a>
-
-                <a href="https://www.facebook.com/groups/385692052358680" target="_blank">
-                    <img src="multimedia/facebook_icon.png" alt="logo facebook">
-                </a>
-
-                <a href="https://www.youtube.com/channel/UC11LVZvK1pf4wAEvPaiJIeg" target="_blank">
-                    <img src="multimedia/youtube_icon.png" alt="logo youtube">
-                </a>
-            </nav>
         </footer>
 
     </div>

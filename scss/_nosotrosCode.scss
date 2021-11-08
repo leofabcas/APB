@@ -51,45 +51,7 @@
 }
 
 .nosHeader {
-    background: rgb(42, 156, 42);
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
     grid-area: nosHeader;
-    padding: 5px;
-    .nosHeader__titulo {
-        font-size: 3em;
-    }
-    .nosHeader__nosMenu {
-        background: rgb(42, 156, 42);
-        grid-area: nosHeader__nosMenu;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        padding:5px;
-        .nosHeader__nosMenu__links {
-            display: flex;
-            flex-wrap: wrap;
-            flex-basis: auto;
-            a {
-                background: darkolivegreen;
-                color: white;
-                margin: 2px;
-                padding: 2px;
-                width: 100px;
-                font-size: 12px;
-                text-align: center;
-                text-decoration: none;
-                font-weight: 700;
-                &:hover {
-                    background: rgb(42, 156, 42);
-                }
-            }
-        }
-    }
 }
 
 .mainNos {

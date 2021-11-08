@@ -6,119 +6,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="acuario, pecera, peces, plantado, acuarioplantado, aquascaping, paisajismo, acuarismo">
-    <meta name="description" content="Deseamos difundir y acercar a toda la comunidad acuarística argentina tanto hacia el acuapaisajismo, así como también a los acuarios de biotopo.">
-    <link rel="stylesheet" href="css/fonts.css">
+    <meta name="keywords"
+        content="acuario, pecera, peces, plantado, acuarioplantado, aquascaping, paisajismo, acuarismo">
+    <meta name="description"
+        content="Deseamos difundir y acercar a toda la comunidad acuarística argentina tanto hacia el acuapaisajismo, así como también a los acuarios de biotopo.">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontello.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
+        rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"
-        rel="stylesheet">
+        >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1ca835493e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="contenedorHome">
 
         <header class="homeHeader">
-
-            <div class="homeHeader__titular">
-                <h1>ACUARIOS PLANTADOS Y BIOTOPOS</h1>
-            </div>
-
-            <div>
-                <img class="homeHeader__imgLogo"
-                    src="https://static.wixstatic.com/media/5c9df5_55667423be6148ac8b44525b24525c35~mv2.png/v1/fill/w_273,h_228,al_c,q_85,usm_0.66_1.00_0.01/5c9df5_55667423be6148ac8b44525b24525c35~mv2.webp"
-                    alt="Logo del grupo">
-            </div>
-
         </header>
 
+        <div class="socialBar">
+            <a href="https://www.instagram.com/acuarios.plantados.y.biotopos/" target="_blank">
+                <img class="ig" src="multimedia/instagram.svg" alt="logo instagram">
+            </a>
+
+            <a href="https://www.facebook.com/groups/385692052358680" target="_blank">
+                <img class="face" src="multimedia/facebook.svg" alt="logo facebook">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC11LVZvK1pf4wAEvPaiJIeg" target="_blank">
+                <img class="yt" src="multimedia/youtube.svg" alt="logo youtube">
+            </a>
+        </div>
+
         <main class="homeBarImg">
+            <div class="homeBarImg__menu">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><h1>Acuarios Plantados & Biotopos | </h1></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="concurso.html">Concurso</a>
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="encuentros.html">Encuentros</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
 
-            <nav class="homeBarImg__menu">
-                <a class="homeBarImg__menu__home" href="index.html">Home</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="concurso.html">Concurso</a>
-                <a href="galeria.html">Galeria</a>
-                <a href="encuentros.html">Encuentros</a>
-            </nav>
-
-            <img src="multimedia/bucephalandra-hades-2.jpg" alt="imagenBucephalandra">
+            <a href="#article-1"><img src="multimedia/aquascaping_luis_cardoso-1024x480.jpg" alt="imagenBucephalandra"></a>
 
             <div class="homeBarImg__dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
                 </a>
-              
+                <div>
+                    <img class="homeHeader__imgLogo"
+                        src="https://static.wixstatic.com/media/5c9df5_55667423be6148ac8b44525b24525c35~mv2.png/v1/fill/w_273,h_228,al_c,q_85,usm_0.66_1.00_0.01/5c9df5_55667423be6148ac8b44525b24525c35~mv2.webp"
+                        alt="Logo del grupo">
+                </div>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="index.html">Home</a></li>
-                  <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
-                  <li><a class="dropdown-item" href="concurso.html">Concurso</a></li>
-                  <li><a class="dropdown-item" href="galeria.html">Galeria</a></li>
-                  <li><a class="dropdown-item" href="encuentros.html">Encuentros</a></li>
+                    <li><a class="dropdown-item" href="index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="dropdown-item" href="concurso.html">Concurso</a></li>
+                    <li><a class="dropdown-item" href="galeria.html">Galeria</a></li>
+                    <li><a class="dropdown-item" href="encuentros.html">Encuentros</a></li>
                 </ul>
-              </div>
+            </div>
         </main>
 
-        
-
-        <div class="homeContenido1">
-            <h3 class="contenidos__titulo">El Acuario Dulce</h3>
-            <br>
-            <p class="contenidos__parrafo">Breve reseña de lo que significa el tipo de acuario mencionado</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero possimus
-                labore unde nobis ducimus nisi
-                totam perspiciatis voluptates, assumenda mollitia.
-            </p>
+        <div class="homeContenido1Img">
+            <img class="homeContenido1Img__img" src="/multimedia/Zhangjiajie.jpg" alt="">
         </div>
 
-        <div class="homeContenido2">
-            <h3 class="contenidos__titulo">Propósito del sitio</h3>
-            <br>
-            <p class="contenidos__parrafo">Se describe la filosofía que el grupo profesa en cuanto al hobby</p>
-            <br>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut error aspernatur fugit eligendi ab
-                aperiam eos atque nam.
-            </p>
-        </div>
+        <section class="homeContenido">
 
-        <div class="homeContenido3">
-            <h3 class="contenidos__titulo">Takashi Amano</h3>
-            <br>
-            <p class="contenidos__parrafo">Aquí va una frase del refernte máximo del acuario natural</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perspiciatis unde veniam explicabo
-                praesentium, corrupti incidunt. Nihil rem illum impedit?</p>
-        </div>
+            <aside class="homeContenido__aside">
+                <h3 class="homeContenido__aside__titulo"><a href="#">Índice</a></h3>
+                <nav class="homeContenido__aside__indice">
+                    <a href="#article-1">Acuario Dulce</a>
+                    <a href="#article-2">Nuestro propósito</a>
+                    <a href="#article-3">El Maestro</a>
+                    <a href="#article-4">Nuestros Valuartes</a>
+                    <a href="#article-5">El Acuario</a>
+                </nav>
+            </aside>
 
-        <div class="homeContenido4">
-            <h3 class="contenidos__titulo">Mentores Nacionales</h3>
-            <br>
-            <p class="contenidos__parrafo">Alguna referencia de nuestros mnáximos exponentes locales</p>
-            <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae totam pariatur suscipit culpa earum
-                quidem laborum placeat commodi. Repudiandae, nihil?</p>
-        </div>
+            <article class="homeContenido__article">
 
-        <article class="homeArticle">
-            <h2>¿Por qué tener un acuario?...</h2>
-            <br>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus dicta id eveniet numquam, ullam sequi!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, deleniti.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </article>
+                <div class="homeContenido__article__1">
+                    <h3 class="homeContenidos__titulos" id="article-1">El Acuario Dulce</h3>
+                    <p class="homeContenidos__parrafos">Breve reseña de lo que significa el tipo de acuario mencionado
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero possimus
+                        labore unde nobis ducimus nisi
+                        totam perspiciatis voluptates, assumenda mollitia.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nihil illum suscipit incidunt
+                        optio provident totam iste voluptas ipsam reprehenderit, quod maiores doloribus quam recusandae
+                        voluptatibus laboriosam hic! Numquam quis excepturi nulla possimus. Laudantium quas sed aliquam
+                        porro eum laborum beatae sint in quos mollitia sunt dolorum, inventore ut sapiente molestiae
+                        repellat quasi iusto quisquam animi harum quod, eius maiores.
+                    </p>
+                </div>
 
- 
+                <div class="homeContenido__article__2">
+                    <h3 class="homeContenidos__titulos" id="article-2">Propósito del sitio</h3>
+                    <p class="homeContenidos__parrafos">Se describe la filosofía que el grupo profesa en cuanto al hobby
+                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut error aspernatur fugit
+                        eligendi
+                        ab
+                        aperiam eos atque nam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reiciendis maiores nostrum
+                        consequuntur placeat corporis saepe doloribus tenetur accusamus, cum odit porro expedita ratione
+                        praesentium et, perspiciatis animi! Soluta quod, earum quia incidunt eum impedit minima ut
+                        officiis harum nobis in odit? Officia, animi a.
+                    </p>
+                </div>
+
+                <div class="homeContenido__article__3">
+                    <h3 class="homeContenidos__titulos" id="article-3">Takashi Amano</h3>
+                    <p class="homeContenidos__parrafos">Aquí va una frase del refernte máximo del acuario natural</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perspiciatis unde veniam explicabo
+                        praesentium, corrupti incidunt. Nihil rem illum impedit?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla esse odio iure omnis
+                        cupiditate quidem officiis? Modi eaque odit ad? Molestias, blanditiis sequi! Molestias magni
+                        nemo, sequi ipsa soluta aliquid odit omnis minus, blanditiis quisquam tempore quas temporibus
+                        dolor nihil, ad architecto eaque optio nesciunt? Voluptate voluptates, ad omnis, esse corporis
+                        molestiae unde aspernatur incidunt minus minima cumque repudiandae.
+                    </p>
+                </div>
+
+                <div class="homeContenido__article__4">
+                    <h3 class="homeContenidos__titulos" id="article-4">Mentores Nacionales</h3>
+                    <p class="homeContenidos__parrafos">Alguna referencia de nuestros mnáximos exponentes locales</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae totam pariatur suscipit culpa
+                        earum
+                        quidem laborum placeat commodi. Repudiandae, nihil?
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat nisi quae recusandae esse
+                        accusantium reiciendis quos illum laudantium nostrum temporibus? Iste delectus nesciunt aliquid
+                        possimus praesentium deserunt maxime voluptates, laboriosam aspernatur deleniti. Officia amet
+                        fugit, autem magnam facilis doloremque vero eius obcaecati laudantium ipsam itaque vitae
+                        necessitatibus praesentium sunt eaque rerum consequatur, consectetur commodi aliquid! Inventore
+                        asperiores minus libero praesentium a aliquam corporis velit fugiat veritatis error doloribus
+                        reprehenderit debitis nisi, dolore voluptatum, ratione nesciunt, est voluptatibus suscipit
+                        quisquam magnam.
+                    </p>
+                </div>
+
+                <div class="homeContenido__article__5">
+                    <h3 class="homeContenidos__titulos" id="article-5">¿Por qué tener un acuario?...</h3>
+                    <p class="homeContenidos__parrafos">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus dicta id eveniet numquam, ullam
+                        sequi!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cumque fugit quam laboriosam
+                        autem consequuntur unde excepturi doloremque earum ullam dolorem, ab culpa exercitationem
+                        incidunt corrupti porro repellendus hic odit sequi magnam assumenda amet. Nemo harum aliquam,
+                        inventore officiis at repellat temporibus autem? Quam veniam qui cupiditate repellendus
+                        similique distinctio.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum autem quis exercitationem quaerat
+                        corrupti eos doloribus maxime quasi est magnam! Aspernatur, officiis. Consequuntur nemo
+                        accusamus voluptate ab, exercitationem maiores nam atque quam laudantium minus aspernatur minima
+                        distinctio consectetur dicta debitis modi vel ea architecto deleniti quisquam tenetur commodi
+                        expedita! Sunt, velit. Deleniti, aut non laborum blanditiis voluptatibus culpa repellat tenetur
+                        harum omnis? Fuga commodi veritatis adipisci, officiis pariatur totam facere! Magni voluptate
+                        vero harum autem et, ut delectus fugit vel soluta distinctio earum libero sunt architecto
+                        mollitia ducimus cumque minus neque necessitatibus est aliquid impedit, aspernatur ad.
+                        Consectetur, velit accusantium.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error aliquam nisi velit ipsa,
+                        pariatur odio magni architecto perspiciatis corporis dignissimos quam, nobis sequi, dolor
+                        tempore doloribus! Quod unde eius nobis veritatis, autem quia omnis, quas laudantium qui
+                        temporibus dolores distinctio ducimus ipsa non dignissimos quidem quos provident sit
+                        exercitationem voluptates, laboriosam magnam consequuntur. Vel modi magnam quo veniam, alias
+                        tempore nihil aspernatur deleniti consequatur voluptatem, ratione excepturi, adipisci placeat.
+                        Dolores, ipsa? Sint fugiat quidem iste tempore libero perferendis laborum, temporibus corrupti
+                        officia voluptatum, distinctio voluptate voluptas nisi. Laudantium repudiandae sunt ratione
+                        asperiores accusantium officiis ipsam cumque nihil vitae? Id.
+                    </p>
+                </div>
+
+            </article>
+
+        </section>
+
+        <footer>
+            <div>
+                <img class="footer__logo" src="multimedia/LOGOAPBOK-min.png" alt="">
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright__titulo">Todos los derechos reservados.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, eum?</p>
+                <p>©2021 Copyright: Leo AP&B</p>
+            </div>
+            <div class="footer__redes">
+                <h6>Redes</h6>
+                <nav class="navSocialNetworks">
+                    <a class="icon-instagram" href="https://www.instagram.com/acuarios.plantados.y.biotopos/"
+                        target="_blank"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/groups/385692052358680"
+                        target="_blank"></a>
+                    <a class="icon-youtube" href="https://www.youtube.com/channel/UC11LVZvK1pf4wAEvPaiJIeg"
+                        target="_blank"></a>
+                </nav>
+            </div>
+            <div>
+                <nav class="footer__links">
+                    <h6>Secciones</h6>
+                    <a href="index.html">home</a>
+                    <a href="concurso.html">concurso</a>
+                    <a href="nosotros.html">nosotros</a>
+                    <a href="encuentros.html">encuentros</a>
+                    <a href="galeria.html">galeria</a>
+                </nav>
+            </div>
+        </footer>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -9,7 +9,7 @@
         
     <title>Galeria de acuarios y paisajismo acuatico argentino</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/fontello.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -24,13 +24,29 @@
     <div class="galContainer">
 
         <header class="galHeader">
-            <h1 class="galHeader__titulo"> AP&B | GALERIA</h1>
-            <nav class="galHeader__navMenu">
-                <a href="index.html">HOME</a>
-                <a href="nosotros.html">NOSOTROS</a>
-                <a href="concurso.html">CONCURSO</a>
-                <a href="encuentros.html">ENCUENTROS</a>
-            </nav>
+            <div class="galHeader__menu">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <h1>AP&B Galeria | </h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="concurso.html">Concurso</a>
+                                <a class="nav-link active" aria-current="page" href="#">Galeria</a>
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="encuentros.html">Encuentros</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </header>
 
         <section class="aquascaping">
@@ -246,26 +262,36 @@
         </div>
 
         <footer>
-            <nav class="footer__links">
-                <a href="index.html">HOME</a>
-                <a href="nosotros.html">NOSOTROS</a>
-                <a href="concurso.html">CONCURSO</a>
-                <a href="encuentros.html">ENCUENTROS</a>
-            </nav>
+            <div>
+                <img class="footer__logo" src="multimedia/LOGOAPBOK-min.png" alt="">
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright__titulo">Todos los derechos reservados.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, eum?</p>
+                <p>©2021 Copyright: Leo AP&B</p>
+            </div>
+            <div class="footer__redes">
+                <h6>Redes</h6>
+                <nav class="navSocialNetworks">
+                    <a class="icon-instagram" href="https://www.instagram.com/acuarios.plantados.y.biotopos/"
+                        target="_blank"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/groups/385692052358680"
+                        target="_blank"></a>
+                    <a class="icon-youtube" href="https://www.youtube.com/channel/UC11LVZvK1pf4wAEvPaiJIeg"
+                        target="_blank"></a>
+                </nav>
+            </div>
+            <div>
+                <nav class="footer__links">
+                    <h6>Secciones</h6>
+                    <a href="index.html">home</a>
+                    <a href="concurso.html">concurso</a>
+                    <a href="nosotros.html">nosotros</a>
+                    <a href="encuentros.html">encuentros</a>
+                    <a href="galeria.html">galeria</a>
+                </nav>
+            </div>
 
-            <nav class="navSocialNetworks">
-                <a href="https://www.instagram.com/acuarios.plantados.y.biotopos/" target="_blank">
-                    <img src="multimedia/instagram_icon.png" alt="logo instagram">
-                </a>
-
-                <a href="https://www.facebook.com/groups/385692052358680" target="_blank">
-                    <img src="multimedia/facebook_icon.png" alt="logo facebook">
-                </a>
-                
-                <a href="https://www.youtube.com/channel/UC11LVZvK1pf4wAEvPaiJIeg" target="_blank">
-                    <img src="multimedia/youtube_icon.png" alt="logo youtube">
-                </a>
-            </nav>
         </footer>
     </div>
 
