@@ -67,28 +67,17 @@
         width: 100%;
         margin: 0;
         grid-template-areas:    
-            "homeHeader"
-            "contenedorHome__dropdown"
+            
             "homeBarImg"
-            "contenido1"
-            "contenido2"
-            "contenido3"
-            "contenido4"
-            "homeArticle"
+            "homeContenido"
             "footer";
             
-            .homeHeader__imgLogo {
+            .socialBar {
                 display: none;
             }
-            .homeHeader__titular {
-                font-size: 12px;
-            }    
-            .homeBarImg__menu {
+            .homeContenido__aside {
                 display: none;
             }
-            .homeBarImg__dropdown {
-                display: contents;
-            }  
         }
     }
 
