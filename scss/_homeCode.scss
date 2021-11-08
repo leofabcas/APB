@@ -21,6 +21,16 @@
     .homeBarImg__menu {
         position: sticky;
         top: 0;
+        // .navbar {
+        //     .container-fluid {
+        //         .homeBarImg__menu__titulo {
+        //             font-size: 2.25rem;
+        //         }
+        //     }
+        // }
+        .homeBarImg__menu__titulo {
+            font-size: 1.5em;
+        }
     }
     img {
         width: 100%;
@@ -73,7 +83,7 @@
         .homeContenido__aside__titulo {
             font-family: 'Montserrat', sans-serif;
             font-weight: normal;
-            font-size: 24px;
+            font-size: 1.5em;
             margin-bottom: 20px;
             color: #f2f2f2;
             a {
@@ -104,16 +114,16 @@
             min-height: 15.625rem;
             min-width: 18.75rem;
             font-family: 'Roboto', sans-serif;
-            font-size: 1.15rem;
-            padding: 0.625rem;
+            font-size: 1.15em;
+            padding: 0.625em;
             // text-align: center;
             .homeContenidos__titulos {
-                font-size: 2.25rem;
+                font-size: 2.25em;
                 color: rgb(87, 80, 24);
                 padding-top: 35px;
             }
             .homeContenidos__parrafos {
-                font-size: 1.35rem;
+                font-size: 1.35em;
                 font-weight: 900;
                 font-style: italic;
             }
