@@ -188,6 +188,8 @@ footer {
     width: 100%;
     margin: 0;
     grid-template-areas: "homeBarImg" "homeContenido" "footer"; }
+    .contenedorHome .homeBarImg .homeBarImg__menu .homeBarImg__menu__titulo {
+      font-size: 20px; }
     .contenedorHome .socialBar {
       display: none; }
     .contenedorHome .homeContenido__aside {

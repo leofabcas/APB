@@ -67,6 +67,13 @@
             "homeBarImg"
             "homeContenido"
             "footer";
+            .homeBarImg {    
+                .homeBarImg__menu {
+                    .homeBarImg__menu__titulo {
+                        font-size: 20px;
+                    }
+                }
+            }    
             .socialBar {
                 display: none;
             }
