@@ -207,9 +207,10 @@ footer {
     .contenedorHome .homeContenido__aside {
       display: none; }
     .contenedorHome .footer__logo {
+      display: none;
       height: 50px; }
     .contenedorHome .footer__copyright {
-      width: 60px; }
+      width: 160px; }
     .contenedorHome .footer__links {
       font-size: 18px; }
     .contenedorHome .footer__redes .navSocialNetworks a {
