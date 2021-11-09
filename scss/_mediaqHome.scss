@@ -80,13 +80,38 @@
                     font-size: 20px;
                 }
             }
-        }    
+        }
+        .homeContenido {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            .homeContenido__aside {
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                padding: 5px;
+                position: static;
+                border-radius: 0;
+                .homeContenido__aside__titulo {
+                    display: none;
+                }
+                .homeContenido__aside__indice {
+                    display: inline-flex;
+                    a {
+                        font-size: 13px;
+                        padding: 5px;
+                    }
+                }
+            }
+            .homeContenido__article {
+                .homeContenidos__titulos {
+                padding-top: 10px;
+                }
+            }
+        }
         .socialBar {
             display: none;
-        }
-        .homeContenido__aside {
-            display: none;
-        }
+        }    
         .footer__logo {
             display: none;
             height: 50px;
