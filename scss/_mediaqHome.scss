@@ -90,8 +90,9 @@
                 width: 100%;
                 margin: 0;
                 padding: 5px;
-                position: static;
+                position: sticky;
                 border-radius: 0;
+                top: 0;
                 .homeContenido__aside__titulo {
                     display: none;
                 }
@@ -105,7 +106,7 @@
             }
             .homeContenido__article {
                 .homeContenidos__titulos {
-                padding-top: 10px;
+                padding-top: 60px;
                 }
             }
         }

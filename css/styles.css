@@ -211,8 +211,9 @@ footer {
         width: 100%;
         margin: 0;
         padding: 5px;
-        position: static;
-        border-radius: 0; }
+        position: sticky;
+        border-radius: 0;
+        top: 0; }
         .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__titulo {
           display: none; }
         .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__indice {
@@ -221,7 +222,7 @@ footer {
             font-size: 13px;
             padding: 5px; }
       .contenedorHome .homeContenido .homeContenido__article .homeContenidos__titulos {
-        padding-top: 10px; }
+        padding-top: 60px; }
     .contenedorHome .socialBar {
       display: none; }
     .contenedorHome .footer__logo {
