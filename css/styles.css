@@ -193,7 +193,11 @@ footer {
     .contenedorHome .socialBar {
       display: none; }
     .contenedorHome .homeContenido__aside {
-      display: none; } }
+      display: none; }
+    .contenedorHome .footer__logo {
+      height: 50px; }
+    .contenedorHome .footer__copyright {
+      width: 60px; } }
 
 @keyframes logoBeat {
   0% {

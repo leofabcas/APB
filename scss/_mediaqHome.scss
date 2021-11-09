@@ -64,24 +64,30 @@
         width: 100%;
         margin: 0;
         grid-template-areas:    
-            "homeBarImg"
-            "homeContenido"
-            "footer";
-            .homeBarImg {    
-                .homeBarImg__menu {
-                    .homeBarImg__menu__titulo {
-                        font-size: 20px;
-                    }
+        "homeBarImg"
+        "homeContenido"
+        "footer";
+        .homeBarImg {    
+            .homeBarImg__menu {
+                .homeBarImg__menu__titulo {
+                    font-size: 20px;
                 }
-            }    
-            .socialBar {
-                display: none;
             }
-            .homeContenido__aside {
-                display: none;
-            }
+        }    
+        .socialBar {
+            display: none;
+        }
+        .homeContenido__aside {
+            display: none;
+        }
+        .footer__logo {
+            height: 50px;
+        }
+        .footer__copyright {
+            width: 60px;
         }
     }
+}
 
 @keyframes logoBeat {
 	0%	    {width: 125px; height:120px;}
