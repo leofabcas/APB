@@ -213,7 +213,9 @@ footer {
         padding: 5px;
         position: sticky;
         border-radius: 0;
-        top: 0; }
+        top: 0;
+        justify-content: space-evenly;
+        text-align: center; }
         .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__titulo {
           display: none; }
         .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__indice {
