@@ -167,7 +167,15 @@ footer {
 
 @media (max-width: 992px) {
   .contenedorHome {
-    grid-template-areas: "homeBarImg homeBarImg  homeBarImg" "homeContenido homeContenido homeContenido" "footer footer  footer"; } }
+    grid-template-areas: "homeBarImg homeBarImg  homeBarImg" "homeContenido homeContenido homeContenido" "footer footer  footer"; }
+  .footer__logo {
+    height: 50px; }
+  .footer__copyright {
+    width: 60px; }
+  .footer__links {
+    font-size: 18px; }
+  .footer__redes .navSocialNetworks a {
+    font-size: 28px; } }
 
 @media (max-width: 768px) {
   .contenedorHome {
