@@ -874,6 +874,9 @@ footer {
     grid-template-areas: "headerConcurso         headerConcurso" "contest2021            contest2021" "galeriaContest         galeriaContest" "posiciones             posiciones" "footer                 footer"; }
   .contest2021 {
     grid-template-areas: "video1Text" "contest2021__videos" "video2Text"; }
+  .contest2021__videos {
+    width: 450px;
+    align-items: center; }
   .footer__logo {
     display: none;
     height: 50px; }
