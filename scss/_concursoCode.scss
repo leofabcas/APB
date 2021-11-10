@@ -25,11 +25,14 @@
     grid-gap: 20px;
     grid-area: contest2021;
     grid-template-areas:
-        "video1Text video1Text  video1"
-        "video2Text video2Text  video2";
-    .contest2021__video1 {
-        grid-area: video1;
-        background: black;
+        "video1Text video1Text"
+        "contest2021__videos     contest2021__videos"
+        "video2Text video2Text";
+    .contest2021__videos {
+        grid-area: contest2021__videos;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         min-width: 350px;
         margin-top: 5px;
     }
@@ -42,7 +45,7 @@
             text-align: center;
             font-size: 2em;
             font-weight: 700;
-            color: #000;;
+            color: #000;
         }
         .contest2021__video1Text__parrafo1 {
             font-size: 1.2rem;
@@ -55,12 +58,6 @@
         }
     }
 
-    .contest2021__video2 {
-        grid-area: video2;
-        background: black;
-        min-width: 350px;
-        margin-top: 5px;
-    }
     .contest2021__video2Text {
         grid-area: video2Text;
         padding: 20px;

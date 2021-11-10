@@ -5,11 +5,11 @@
         "contest2021            contest2021             contest2021"
         "galeriaContest         galeriaContest          galeriaContest"
         "posiciones             posiciones              posiciones"
-        "footer         footer          footer";
+        "footer                 footer                  footer";
         
         font-size: 14px;
-        }
-    } 
+    }
+} 
 
 @media (max-width: 992px) {
     .contNos {
@@ -18,7 +18,7 @@
         "contest2021            contest2021             contest2021"
         "galeriaContest         galeriaContest          galeriaContest"
         "posiciones             posiciones              posiciones"
-        "footer         footer          footer";
+        "footer                 footer                  footer";
         
         font-size: 12px;
     }
@@ -31,31 +31,43 @@
         "contest2021            contest2021"
         "galeriaContest         galeriaContest"
         "posiciones             posiciones"
-        "footer         footer";
+        "footer                 footer";
     }
 
     .contest2021 {
         grid-template-areas:
-            "video1Text video1"
-            "video2Text video2";
+        "video1Text"
+        "contest2021__videos"
+        "video2Text";
     }
 }
 
 @media (max-width: 576px) {
-        .contNos {
-            grid-template-areas:
-            "headerConcurso"
-            "contest2021"
-            "galeriaContest"
-            "posiciones"
-            "footer";
-        }
-    
-        .contest2021 {
-            grid-template-areas:
-                "video1Text"
-                "video1"
-                "video2Text" 
-                "video2";
-        }
+    .contNos {
+        grid-template-areas:
+        "headerConcurso"
+        "contest2021"
+        "galeriaContest"
+        "posiciones"
+        "footer";
+    }
+    .contest2021 {
+        grid-template-areas:
+        "video1Text"
+        "contest2021__videos"
+        "video2Text";
+    }
+    .footer__logo {
+        display: none;
+        height: 50px;
+    }
+    .footer__copyright {
+        width: 160px;
+    }
+    .footer__links {
+        font-size: 18px;
+    }
+    .footer__redes .navSocialNetworks a {
+        font-size: 28px;
+    }
 }

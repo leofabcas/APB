@@ -1,36 +1,25 @@
 .contenedorHome {
-    // width: 100%;
-    // max-width: 100rem;
     min-width:0;
-    // padding: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    // margin: 20px auto;
     display: grid;
-    // grid-gap: 0;
     grid-template-areas:   
-        // "homeHeader     homeHeader      homeHeader  homeHeader" 
-        "homeBarImg     homeBarImg      homeBarImg  homeBarImg"
+        "homeBarImg     homeBarImg      homeBarImg      homeBarImg"
         "homeContenido  homeContenido   homeContenido   homeContenido"
-        "footer         footer          footer      footer";
+        "footer         footer          footer          footer";
 }
 
 .homeBarImg {
     grid-area: homeBarImg;
-
     .homeBarImg__menu {
         position: sticky;
         top: 0;
-        .homeBarImg__menu__titulo {
-            font-size: 1.5em;
-        }
     }
     img {
         width: 100%;
         background: none;
     }
     .homeBarImg__dropdown {
-        // background: black;
         position: sticky;
         top: 0;
         display: none;
