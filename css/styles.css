@@ -256,7 +256,7 @@ footer {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   display: grid;
-  grid-template-areas: "nosHeader  nosHeader          nosHeader           nosHeader" "nosBarImg  nosHeader__nosMenu nosHeader__nosMenu  nosHeader__nosMenu" "nosBarImg  mainNos            mainNos             asideNos" "nosBarImg  sectionNos         sectionNos          asideNos" "nosBarImg  articleNos         articleNos          articleNos" "footer     footer             footer              footer"; }
+  grid-template-areas: "nosHeader  nosHeader   nosHeader" "mainNos    mainNos     asideNos" "sectionNos sectionNos  asideNos" "articleNos articleNos  articleNos" "footer     footer      footer"; }
 
 .nosBarImg {
   color: #fff;
@@ -750,6 +750,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 5px; }
+    .contest2021 .contest2021__videos iframe {
+      margin-top: 5px; }
   .contest2021 .contest2021__video1Text {
     grid-area: video1Text;
     padding: 20px;
@@ -892,6 +894,11 @@ footer {
     grid-template-areas: "headerConcurso" "contest2021" "galeriaContest" "posiciones" "footer"; }
   .contest2021 {
     grid-template-areas: "video1Text" "contest2021__videos" "video2Text"; }
+    .contest2021 .contest2021__videos {
+      width: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
   .footer__logo {
     display: none;
     height: 50px; }

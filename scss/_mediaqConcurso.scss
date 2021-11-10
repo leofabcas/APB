@@ -42,7 +42,7 @@
     }
     .contest2021__videos {
         width: 400px;
-        align-items: center;
+        align-items: center;      
     }
     .footer__logo {
         display: none;
@@ -73,7 +73,13 @@
         "video1Text"
         "contest2021__videos"
         "video2Text";
-    }
+        .contest2021__videos {
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }        
     .footer__logo {
         display: none;
         height: 50px;

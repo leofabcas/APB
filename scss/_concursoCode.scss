@@ -16,7 +16,6 @@
 }
 
 .contest2021 {
-    // width: 90%;
     display: grid;
     grid-gap: 20px;
     grid-area: contest2021;
@@ -29,14 +28,15 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        // min-width: 350px;
         margin-top: 5px;
+        iframe {
+            margin-top: 5px;
+        }
     }
     .contest2021__video1Text {
         grid-area: video1Text;  
         padding: 20px;
         background: white;
-        // min-width: 350px;
         .contest2021__video1Text__titulo {
             text-align: center;
             font-size: 2em;
@@ -58,7 +58,6 @@
         grid-area: video2Text;
         padding: 20px;
         background: white;
-        // min-width: 350px;
         .contest2021__video2Text__titulo {
             text-align: center;
             font-size: 2em;
