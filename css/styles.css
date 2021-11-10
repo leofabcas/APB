@@ -875,7 +875,7 @@ footer {
   .contest2021 {
     grid-template-areas: "video1Text" "contest2021__videos" "video2Text"; }
   .contest2021__videos {
-    width: 400x;
+    width: 400px;
     align-items: center; }
   .footer__logo {
     display: none;
