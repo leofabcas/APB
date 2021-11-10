@@ -21,7 +21,7 @@
         }
 }
 
-@media (max-width:768px) {
+@media (max-width:576px) {
     .galContainer {
         grid-template-areas:    
         "galHeader"
@@ -33,5 +33,44 @@
         "contenido3"
         "asideGaleria"
         "footer";                     
+        .asideGaleria {
+            margin-left: 0;
+            .asideGaleria__titulo {
+                font-size: 2.0em;
+            }
+                @for $i from 1 to 5 {
+                    .asideGaleria__p#{$i} {
+                        font-size: 1em - $i;
+                        font-weight: 700 - ($i*20);
+                    }
+            }
         }
+        .aquascaping {
+            padding: 0;
+            margin-top: 10px;
+            .aquascaping__titulo {
+                font-size: 2em;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+        .biotope {
+            padding: 0;
+            margin-top: 10px;
+            .biotope__titulo {
+                font-size: 2em;
+                background: #000;
+                color: #fff;
+            }
+        }
+        .wabiKusa {
+            padding: 0;
+            margin-top: 10px;
+            .wabikusa__titulo {
+                font-size: 2em;
+                background: #000;
+                color: #fff;
+            }
+        }  
+    }
 }
