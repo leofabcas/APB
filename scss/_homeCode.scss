@@ -12,13 +12,15 @@
 .homeBarImg {
     grid-area: homeBarImg;
     .homeBarImg__menu {
+        z-index: 9;
         position: sticky;
         top: 0;
     }
     img {
         width: 100%;
         background: none;
-    }
+        clip-path: polygon(100% 90%, 50% 100%, 0 90%, 0 0, 100% 0);
+        }
     .homeBarImg__dropdown {
         position: sticky;
         top: 0;
@@ -53,6 +55,7 @@
     margin: auto;
     justify-content: space-between;
     .homeContenido__aside {
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
         min-width: 30%;
         margin: 40px 20px 20px 0;
         height: 100%;
@@ -63,6 +66,7 @@
         top: 40px;
         .homeContenido__aside__titulo {
             font-family: 'Montserrat', sans-serif;
+            text-align: start;
             font-weight: normal;
             font-size: 1.5em;
             margin-bottom: 20px;
@@ -91,7 +95,7 @@
         .homeContenido__article__2,
         .homeContenido__article__3,
         .homeContenido__article__4,
-        .homeContenido__article__5 {
+        .homeContenido__article__5 {                
             min-height: 15.625rem;
             min-width: 18.75rem;
             font-family: 'Roboto', sans-serif;
@@ -103,9 +107,30 @@
                 padding-top: 35px;
             }
             .homeContenidos__parrafos {
+                z-index: 99;
                 font-size: 1.35em;
                 font-weight: 900;
                 font-style: italic;
+            }
+        }
+        .homeContenido__article__1 {
+            div div div .modal-header {
+                background: black;
+            }
+            div div div div .modal-title {
+                color:white;
+            }
+            div div div .modal-body {
+                h5 {
+                    color:rgb(30, 134, 17);
+                }
+                ul li {
+                    list-style: disc;
+                    font-style: italic;
+                }
+            }  
+            div div div img {
+                max-height: 300px;
             }
         }
     }

@@ -18,11 +18,13 @@ body {
 .homeBarImg {
   grid-area: homeBarImg; }
   .homeBarImg .homeBarImg__menu {
+    z-index: 9;
     position: sticky;
     top: 0; }
   .homeBarImg img {
     width: 100%;
-    background: none; }
+    background: none;
+    clip-path: polygon(100% 90%, 50% 100%, 0 90%, 0 0, 100% 0); }
   .homeBarImg .homeBarImg__dropdown {
     position: sticky;
     top: 0;
@@ -53,6 +55,7 @@ body {
   margin: auto;
   justify-content: space-between; }
   .homeContenido .homeContenido__aside {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     min-width: 30%;
     margin: 40px 20px 20px 0;
     height: 100%;
@@ -63,6 +66,7 @@ body {
     top: 40px; }
     .homeContenido .homeContenido__aside .homeContenido__aside__titulo {
       font-family: 'Montserrat', sans-serif;
+      text-align: start;
       font-weight: normal;
       font-size: 1.5em;
       margin-bottom: 20px;
@@ -102,9 +106,21 @@ body {
     .homeContenido .homeContenido__article .homeContenido__article__3 .homeContenidos__parrafos,
     .homeContenido .homeContenido__article .homeContenido__article__4 .homeContenidos__parrafos,
     .homeContenido .homeContenido__article .homeContenido__article__5 .homeContenidos__parrafos {
+      z-index: 99;
       font-size: 1.35em;
       font-weight: 900;
       font-style: italic; }
+  .homeContenido .homeContenido__article .homeContenido__article__1 div div div .modal-header {
+    background: black; }
+  .homeContenido .homeContenido__article .homeContenido__article__1 div div div div .modal-title {
+    color: white; }
+  .homeContenido .homeContenido__article .homeContenido__article__1 div div div .modal-body h5 {
+    color: #1e8611; }
+  .homeContenido .homeContenido__article .homeContenido__article__1 div div div .modal-body ul li {
+    list-style: disc;
+    font-style: italic; }
+  .homeContenido .homeContenido__article .homeContenido__article__1 div div div img {
+    max-height: 300px; }
 
 footer {
   background: black;
@@ -179,10 +195,33 @@ footer {
   .contenedorHome {
     font-size: 15px;
     grid-template-areas: "homeBarImg homeBarImg" "homeContenido homeContenido" "footer footer"; }
+    .contenedorHome .homeBarImg img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
     .contenedorHome .socialBar {
       display: none; }
-    .contenedorHome .homeContenido__aside {
-      display: none; }
+    .contenedorHome .homeContenido {
+      display: flex;
+      width: 100%;
+      flex-direction: column; }
+      .contenedorHome .homeContenido .homeContenido__aside {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        position: sticky;
+        border-radius: 0;
+        top: 0;
+        justify-content: space-around;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+        .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__titulo {
+          display: none; }
+        .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__indice {
+          justify-content: space-evenly;
+          display: inline-flex; }
+          .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__indice a {
+            font-size: 13px;
+            padding: 5px; }
     .contenedorHome .footer__logo {
       height: 50px; }
     .contenedorHome .footer__copyright {
@@ -198,6 +237,8 @@ footer {
     width: 100%;
     margin: 0;
     grid-template-areas: "homeBarImg" "homeContenido" "footer"; }
+    .contenedorHome .homeBarImg img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
     .contenedorHome .homeBarImg .homeBarImg__menu .homeBarImg__menu__titulo {
       font-size: 20px; }
     .contenedorHome .homeContenido {
@@ -213,7 +254,8 @@ footer {
         border-radius: 0;
         top: 0;
         justify-content: space-evenly;
-        text-align: center; }
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
         .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__titulo {
           display: none; }
         .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__indice {
