@@ -263,6 +263,8 @@ footer {
           .contenedorHome .homeContenido .homeContenido__aside .homeContenido__aside__indice a {
             font-size: 13px;
             padding: 5px; }
+      .contenedorHome .homeContenido .homeContenido__article .homeContenido__article__1 div div div img {
+        max-height: 250px; }
       .contenedorHome .homeContenido .homeContenido__article .homeContenidos__titulos {
         padding-top: 80px; }
     .contenedorHome .socialBar {
