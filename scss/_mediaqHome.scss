@@ -141,8 +141,13 @@
                 }
             }
             .homeContenido__article {
+                .homeContenido__article__1 {
+                    div div div img{
+                        max-height: 250px;
+                    }
+                }
                 .homeContenidos__titulos {
-                padding-top: 80px;
+                    padding-top: 80px;
                 }
             }
         }

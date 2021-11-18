@@ -55,11 +55,12 @@
     margin: auto;
     justify-content: space-between;
     .homeContenido__aside {
+        background-image: url(../multimedia/fondo-betta-geadbb0e0d_640.jpg);
         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
         min-width: 30%;
         margin: 40px 20px 20px 0;
         height: 100%;
-        background: black;
+        // background: black;
         padding: 20px;
         border-radius: 3px;
         position: sticky;
@@ -95,7 +96,7 @@
         .homeContenido__article__2,
         .homeContenido__article__3,
         .homeContenido__article__4,
-        .homeContenido__article__5 {                
+        .homeContenido__article__5 {           
             min-height: 15.625rem;
             min-width: 18.75rem;
             font-family: 'Roboto', sans-serif;
@@ -114,13 +115,13 @@
             }
         }
         .homeContenido__article__1 {
-            div div div .modal-header {
+            .modal-header {
                 background: black;
             }
-            div div div div .modal-title {
+            .modal-title {
                 color:white;
             }
-            div div div .modal-body {
+            .modal-body {
                 h5 {
                     color:rgb(30, 134, 17);
                 }
@@ -129,8 +130,23 @@
                     font-style: italic;
                 }
             }  
-            div div div img {
+            img {
                 max-height: 300px;
+            }
+            .homeContenido__article__1__imagenes {
+                clip-path: polygon(50% 0, 100% 15%, 100% 100%, 50% 85%, 0 99%, 0 15%);
+            }
+        }
+        .homeContenido__article__2__imagenes{
+            img {
+                max-width: 900px;
+                clip-path: polygon(50% 15%, 100% 0, 100% 100%, 50% 85%, 0 99%, 0 0);
+            }
+        }
+        .homeContenido__article__3__imagenes {
+            img {
+                max-width: 900px;
+                clip-path: polygon(50% 0, 100% 15%, 100% 85%, 50% 100%, 0 85%, 0 15%);
             }
         }
     }
