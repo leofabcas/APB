@@ -829,9 +829,8 @@ footer {
 
 .contest2021 {
   display: grid;
-  grid-gap: 20px;
   grid-area: contest2021;
-  grid-template-areas: "video1Text video1Text" "contest2021__videos     contest2021__videos" "video2Text video2Text"; }
+  grid-template-areas: "video1Text             video1Text" "video2Text             video2Text" "contest2021__videos    contest2021__videos"; }
   .contest2021 .contest2021__videos {
     grid-area: contest2021__videos;
     display: flex;
@@ -846,25 +845,41 @@ footer {
     background: white; }
     .contest2021 .contest2021__video1Text .contest2021__video1Text__titulo {
       text-align: center;
-      font-size: 2em;
+      font-size: 7em;
       font-weight: 700;
       color: #000; }
     .contest2021 .contest2021__video1Text .contest2021__video1Text__parrafo1 {
-      font-size: 1.2rem;
+      font-size: 2em;
       font-weight: 500;
       font-style: italic; }
     .contest2021 .contest2021__video1Text .contest2021__video1Text__parrafo2 {
-      font-size: 1rem;
+      font-size: 1.2em;
       font-weight: 350; }
+    .contest2021 .contest2021__video1Text ul h3 {
+      background: darkgreen;
+      font-size: 2.5em;
+      color: white;
+      text-decoration: none; }
+    .contest2021 .contest2021__video1Text ul li {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 10px 0 10px 0; }
+      .contest2021 .contest2021__video1Text ul li div {
+        max-width: 700px; }
+      .contest2021 .contest2021__video1Text ul li img {
+        max-width: 500px;
+        max-height: 300px; }
   .contest2021 .contest2021__video2Text {
     grid-area: video2Text;
     padding: 20px;
     background: white; }
     .contest2021 .contest2021__video2Text .contest2021__video2Text__titulo {
-      text-align: center;
-      font-size: 2em;
+      background: darkgreen;
+      font-size: 2.5em;
       font-weight: 700;
-      color: #000; }
+      color: white; }
     .contest2021 .contest2021__video2Text .contest2021__video2Text__parrafo1 {
       font-size: 1.2rem;
       font-weight: 500;
