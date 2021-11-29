@@ -119,6 +119,7 @@
             width: 100%;
             flex-direction: column;
             .homeContenido__aside {
+                z-index: 8;
                 display: inline-block;
                 width: 100%;
                 margin: 0;
