@@ -60,7 +60,7 @@
 }
 
 @media (max-width: 576px) {
-    .contNos {
+    .contConcurso {
         grid-template-areas:
         "headerConcurso"
         "contest2021"
@@ -73,6 +73,16 @@
         "video1Text"
         "contest2021__videos"
         "video2Text";
+        .contest2021__video1Text .contest2021__video1Text__titulo {
+            font-size: 4em;
+        }
+        .contest2021__video1Text__parrafo1{
+            font-size: 1.5em;
+        }
+        .phjueces {
+            max-width: 100px;
+            max-height: 200px;
+        }
         .contest2021__videos {
             width: 400px;
             display: flex;
