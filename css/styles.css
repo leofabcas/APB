@@ -828,58 +828,79 @@ footer {
   grid-area: headerConcurso; }
 
 .contest2021 {
-  display: grid;
+  display: subgrid;
   grid-area: contest2021;
   grid-template-areas: "video1Text             video1Text" "video2Text             video2Text" "contest2021__videos    contest2021__videos"; }
-  .contest2021 .contest2021__videos {
-    grid-area: contest2021__videos;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 5px; }
-    .contest2021 .contest2021__videos iframe {
-      margin-top: 5px; }
   .contest2021 .contest2021__video1Text {
     grid-area: video1Text;
-    padding: 20px;
     background: white; }
     .contest2021 .contest2021__video1Text .contest2021__video1Text__titulo {
+      padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
+      letter-spacing: 0.200em;
       text-align: center;
       font-size: 7em;
       font-weight: 700;
       color: #000; }
     .contest2021 .contest2021__video1Text .contest2021__video1Text__parrafo1 {
+      padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
       font-size: 2em;
       font-weight: 500;
       font-style: italic; }
     .contest2021 .contest2021__video1Text .contest2021__video1Text__parrafo2 {
+      padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
       font-size: 1.2em;
       font-weight: 350; }
-    .contest2021 .contest2021__video1Text ul h3 {
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces h3 {
       background: darkgreen;
       font-size: 2.5em;
-      color: white;
-      text-decoration: none; }
-    .contest2021 .contest2021__video1Text ul li {
+      color: white; }
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__fukada,
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__balbi,
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__lecuna,
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__alex {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
       margin: 10px 0 10px 0; }
-      .contest2021 .contest2021__video1Text ul li div {
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__fukada .fukada__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__fukada .balbi__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__fukada .lecuna__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__fukada .alex__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__balbi .fukada__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__balbi .balbi__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__balbi .lecuna__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__balbi .alex__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__lecuna .fukada__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__lecuna .balbi__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__lecuna .lecuna__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__lecuna .alex__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__alex .fukada__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__alex .balbi__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__alex .lecuna__texto,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__alex .alex__texto {
         max-width: 700px; }
-      .contest2021 .contest2021__video1Text ul li img {
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__fukada .phjueces,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__balbi .phjueces,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__lecuna .phjueces,
+      .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__alex .phjueces {
         max-width: 500px;
         max-height: 300px; }
   .contest2021 .contest2021__video2Text {
     grid-area: video2Text;
-    padding: 20px;
     background: white; }
     .contest2021 .contest2021__video2Text .contest2021__video2Text__titulo {
       background: darkgreen;
       font-size: 2.5em;
       font-weight: 700;
       color: white; }
+    .contest2021 .contest2021__video2Text .contest2021__videos {
+      grid-area: contest2021__videos;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 5px; }
+      .contest2021 .contest2021__video2Text .contest2021__videos iframe {
+        margin-top: 5px; }
     .contest2021 .contest2021__video2Text .contest2021__video2Text__parrafo1 {
       font-size: 1.2rem;
       font-weight: 500;

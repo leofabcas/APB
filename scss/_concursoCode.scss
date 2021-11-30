@@ -16,68 +16,68 @@
 }
 
 .contest2021 {
-    display: grid;
+    display: subgrid;
     grid-area: contest2021;
     grid-template-areas:
     "video1Text             video1Text"
     "video2Text             video2Text"
     "contest2021__videos    contest2021__videos";
-    .contest2021__videos {
-        grid-area: contest2021__videos;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-top: 5px;
-        iframe {
-            margin-top: 5px;
-        }
-    }
     .contest2021__video1Text {
         grid-area: video1Text;  
-        padding: 20px;
+        // padding: 20px;
         background: white;
         .contest2021__video1Text__titulo {
+            padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
+            letter-spacing: 0.200em;
             text-align: center;
             font-size: 7em;
             font-weight: 700;
             color: #000;
         }
         .contest2021__video1Text__parrafo1 {
+            padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
             font-size: 2em;
             font-weight: 500;
             font-style: italic;
         }
         .contest2021__video1Text__parrafo2 {
+            padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
             font-size: 1.2em;
             font-weight: 350;
         }
-        ul {   
+        .contest2021__videoText__jueces {   
             h3 {
                 background: darkgreen;
                 font-size: 2.5em;
                 color: white;
-                text-decoration: none;
             }
-            li {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                margin: 10px 0 10px 0;
-                div {
-                    max-width: 700px;
-                }
-                img {
-                    max-width: 500px;
-                    max-height: 300px;
-                }
+            .contest2021__videoText__jueces__contenedor {
+                .contest2021__videoText__jueces__texto__fukada,
+                .contest2021__videoText__jueces__texto__balbi,
+                .contest2021__videoText__jueces__texto__lecuna,
+                .contest2021__videoText__jueces__texto__alex {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    margin: 10px 0 10px 0;
+                    .fukada__texto,
+                    .balbi__texto,
+                    .lecuna__texto,
+                    .alex__texto{
+                        max-width: 700px;
+                    }
+                    .phjueces {
+                        max-width: 500px;
+                        max-height: 300px;
+                    }
+                }    
             }
         }
     }
 
     .contest2021__video2Text {
         grid-area: video2Text;
-        padding: 20px;
+        // padding: 20px;
         background: white;
         .contest2021__video2Text__titulo {
             background: darkgreen;
@@ -85,6 +85,17 @@
             font-size: 2.5em;
             font-weight: 700;
             color: white;
+        }
+        .contest2021__videos {
+            grid-area: contest2021__videos;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 5px;
+            iframe {
+                margin-top: 5px;
+            }
+        
         }
         .contest2021__video2Text__parrafo1 {
             font-size: 1.2rem;
