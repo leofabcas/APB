@@ -178,7 +178,7 @@
                 img {
                     max-height: 20em;
                     max-width: 23em;
-                    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+                    clip-path: circle(50% at 50% 50%);
                 }
             }
         }

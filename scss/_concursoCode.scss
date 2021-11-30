@@ -23,8 +23,7 @@
     "video2Text             video2Text"
     "contest2021__videos    contest2021__videos";
     .contest2021__video1Text {
-        grid-area: video1Text;  
-        // padding: 20px;
+        grid-area: video1Text;
         background: white;
         .contest2021__video1Text__titulo {
             padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
@@ -47,6 +46,7 @@
         }
         .contest2021__videoText__jueces {   
             h3 {
+                padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
                 background: darkgreen;
                 font-size: 2.5em;
                 color: white;
@@ -77,11 +77,10 @@
 
     .contest2021__video2Text {
         grid-area: video2Text;
-        // padding: 20px;
         background: white;
         .contest2021__video2Text__titulo {
             background: darkgreen;
-            // text-align: center;
+            padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
             font-size: 2.5em;
             font-weight: 700;
             color: white;
