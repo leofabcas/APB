@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
-    .contNos {
+    .contConcurso {
         grid-template-areas:
         "headerConcurso         headerConcurso          headerConcurso"
         "contest2021            contest2021             contest2021"
@@ -12,7 +12,7 @@
 } 
 
 @media (max-width: 992px) {
-    .contNos {
+    .contConcurso {
         grid-template-areas:
         "headerConcurso         headerConcurso          headerConcurso"
         "contest2021            contest2021             contest2021"
@@ -25,7 +25,7 @@
 }
 
 @media (max-width:768px) {
-    .contNos {
+    .contConcurso {
         grid-template-areas:
         "headerConcurso         headerConcurso"
         "contest2021            contest2021"
@@ -79,10 +79,22 @@
         .contest2021__video1Text__parrafo1{
             font-size: 1.5em;
         }
-        .contest2021__video1Text ul li .phjueces {
-            max-width: 350px;
-            max-height: 150px;
-        }
+
+        .contest2021__video1Text {
+            .contest2021__videoText__jueces {
+                .contest2021__videoText__jueces__contenedor {
+                    .contest2021__videoText__jueces__texto__fukada,
+                    .contest2021__videoText__jueces__texto__balbi,
+                    .contest2021__videoText__jueces__texto__lecuna,
+                    .contest2021__videoText__jueces__texto__alex {
+                        .phjueces {
+                            max-width: 425px;
+                            max-height: 225px;
+                        }
+                    }
+                }
+            }
+        }    
         .contest2021__videos {
             width: 400px;
             display: flex;

@@ -988,17 +988,17 @@ footer {
       color: #fff; }
 
 @media (max-width: 1200px) {
-  .contNos {
+  .contConcurso {
     grid-template-areas: "headerConcurso         headerConcurso          headerConcurso" "contest2021            contest2021             contest2021" "galeriaContest         galeriaContest          galeriaContest" "posiciones             posiciones              posiciones" "footer                 footer                  footer";
     font-size: 14px; } }
 
 @media (max-width: 992px) {
-  .contNos {
+  .contConcurso {
     grid-template-areas: "headerConcurso         headerConcurso          headerConcurso" "contest2021            contest2021             contest2021" "galeriaContest         galeriaContest          galeriaContest" "posiciones             posiciones              posiciones" "footer                 footer                  footer";
     font-size: 12px; } }
 
 @media (max-width: 768px) {
-  .contNos {
+  .contConcurso {
     grid-template-areas: "headerConcurso         headerConcurso" "contest2021            contest2021" "galeriaContest         galeriaContest" "posiciones             posiciones" "footer                 footer"; }
   .contest2021 {
     grid-template-areas: "video1Text" "contest2021__videos" "video2Text"; }
@@ -1024,9 +1024,12 @@ footer {
       font-size: 4em; }
     .contest2021 .contest2021__video1Text__parrafo1 {
       font-size: 1.5em; }
-    .contest2021 .contest2021__video1Text ul li .phjueces {
-      max-width: 350px;
-      max-height: 150px; }
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__fukada .phjueces,
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__balbi .phjueces,
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__lecuna .phjueces,
+    .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__alex .phjueces {
+      max-width: 425px;
+      max-height: 225px; }
     .contest2021 .contest2021__videos {
       width: 400px;
       display: flex;
