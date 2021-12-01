@@ -94,15 +94,26 @@
                     }
                 }
             }
-        }    
-        .contest2021__videos {
-            width: 400px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
         }
-    }        
+        .contest2021__video2Text {   
+            .contest2021__videos {
+                width: 400px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .galeriaContest {
+        .galeriaContest__fotos {
+            img {
+                &:hover {
+                    transform: scale(100%);
+                } 
+            }      
+        }
+    }      
     .footer__logo {
         display: none;
         height: 50px;
