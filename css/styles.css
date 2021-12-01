@@ -1028,8 +1028,8 @@ footer {
     .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__balbi .phjueces,
     .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__lecuna .phjueces,
     .contest2021 .contest2021__video1Text .contest2021__videoText__jueces .contest2021__videoText__jueces__contenedor .contest2021__videoText__jueces__texto__alex .phjueces {
-      max-width: 425px;
-      max-height: 225px; }
+      max-width: 400px;
+      max-height: 200px; }
     .contest2021 .contest2021__videos {
       width: 400px;
       display: flex;
